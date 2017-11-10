@@ -7,4 +7,4 @@ eureka:
       defaultZone: http://localhost:8761/eureka
 
 localhost:  nihao11
-key: hello11
+key: hello
