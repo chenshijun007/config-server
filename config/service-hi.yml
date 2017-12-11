@@ -1,3 +1,4 @@
 localhost: dev
+params: wode
 server:
   port: 8772
