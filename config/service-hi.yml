@@ -2,4 +2,4 @@ localhost: dev
 params: wo123
 server:
   port: 8762
-  context-path: hi
+  context-path: /hi
