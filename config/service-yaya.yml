@@ -1,5 +1,5 @@
 localhost: test
 server:
   port: 8764
-  context-path: yaya
+  context-path: /yaya
 
