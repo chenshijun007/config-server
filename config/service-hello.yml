@@ -1,4 +1,4 @@
 localhost: account111
 server:
   port: 8763
-  context-path: hello
+  context-path: /hello
