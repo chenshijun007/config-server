@@ -9,7 +9,7 @@ ribbon:
 #是否启用断路器
 feign:
   hystrix:
-    enabled: true    # 在 Feign 中启用 Hystrix
+    enabled: false    # 在 Feign 中启用 Hystrix
 
 #断路器的超时时间
 hystrix:
