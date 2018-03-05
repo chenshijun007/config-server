@@ -1,1 +1,22 @@
 key: value222
+#ribbon的连接设置
+ribbon:
+  ReadTimeout: 15000   # 客户端调用超时时间，单位毫秒
+  OkToRetryOnAllOperations: true  # 客户端请求失败都进行重试
+  MaxAutoRetries: 1   # 重试次数
+  MaxAutoRetriesNextServer: 2   # 重试时尝试更换实例的次数
+
+#是否启用断路器
+feign:
+  hystrix:
+    enabled: true    # 在 Feign 中启用 Hystrix
+
+#断路器的超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 300000
+
