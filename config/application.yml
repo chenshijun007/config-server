@@ -5,5 +5,16 @@ ribbon:
   OkToRetryOnAllOperations: true  # 客户端请求失败都进行重试
   MaxAutoRetries: 1   # 重试次数
   MaxAutoRetriesNextServer: 2   # 重试时尝试更换实例的次数
-
-
+#熔断器的配置
+hystrix:
+  command:
+    service-yaya:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
